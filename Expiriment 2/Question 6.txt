@@ -1,0 +1,9 @@
+The new and delete operators in C++ are used for dynamic memory management, allowing you to allocate and free memory on the heap during program runtime.Unlike static memory (on the stack), which is automatically
+cleaned up when a variable goes out of scope, heap memory stays allocated until you explicitly remove itThe new operator requests memory from the heap. If successful, it initializes the object and returns a 
+pointer containing the memory address of the allocated spaceThe delete operator returns dynamically allocated memory back to the operating system. It prevents your program from consuming unnecessary resources
+
+Syntax:
+
+ return_type name_of_pointer = new datatype(default_value)
+
+delete[] name_of_pointer
