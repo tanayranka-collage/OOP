@@ -13,3 +13,14 @@ int main() {
     test1.display();
     return 0;
 }
+
+/* 
+SYNTAX for defining member function outside class using SRO:
+class Class_name{
+    public:
+    void funct();
+};
+return_type Class_name::function_name(parameters_list){
+    //body
+}
+*/
