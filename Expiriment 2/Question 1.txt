@@ -1,0 +1,1 @@
+The scope resolution operator (::) in C++ is used to explicitly tell the compiler which scope a variable, function, or class belongs to. It is primarily used to access hidden global variables, define class methods outside the class, access static class members, and work with namespaces.
