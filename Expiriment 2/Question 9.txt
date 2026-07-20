@@ -1,0 +1,25 @@
+In C++, manipulators are special functions or objects used to modify the formatting of input and output streams (cin and cout). Instead of using member functions like setf() or precision(), manipulators provide a more concise and readable way to change stream state directly within an insertion (<<) or extraction (>>) chain.
+
+To use most manipulators, you must include the <iomanip> header. Basic manipulators (like endl) are available in the <iostream> header.
+
+Types of Manipulators
+Manipulators without arguments: These are simple functions that modify the stream state immediately. They are included in <iostream>.
+
+Examples: endl, ws, ends, flush.
+
+Manipulators with arguments: These are objects or functions that require parameters to perform specific formatting tasks. They are defined in the <iomanip> header.
+
+Examples: setw(), setprecision(), setfill(), setbase().
+
+
+
+
+Type        Manipulator                              Purpose                                                 Syntax
+No Args      endl               Inserts a newline character and flushes the buffer.                     cout << endl;
+No Args      ws                 Skips/discards leading whitespace in the input stream.                  cin >> ws >> var;
+No Args      ends               Inserts a null character (ends a C-string).                             cout << "Hi" << ends;
+No Args      flush              Flushes the output buffer without inserting a newline.                  cout << flush;
+With Args    setw(n)            Sets the field width to n for the next output item.                     cout << setw(10) << val;
+With Args    setprecision(n)    Sets the number of digits of precision for floats.                      cout << setprecision(4) << val;
+With Args    setfill(char)      Sets the padding character for empty field spaces.                      cout << setfill('*') << setw(5);
+With Args    setbase(n)         Sets the numeric base (8, 10, or 16) for integer output.                cout << setbase(16) << val;
