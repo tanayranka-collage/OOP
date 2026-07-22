@@ -1,3 +1,4 @@
+// code by tanay ranka cse b 8
 #include <iostream>
 using namespace std;
 class Student{
