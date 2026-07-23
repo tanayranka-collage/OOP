@@ -15,7 +15,7 @@ void Staff::accept(){
     cin >> Staff::id;
 }
 void Staff::display(){
-    cout << "Name is: " << Staff::post << endl;
+    cout << "Post is: " << Staff::post << endl;
     cout << "Id is: " << Staff::id << endl;
 }
 
