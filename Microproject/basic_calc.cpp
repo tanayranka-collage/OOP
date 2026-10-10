@@ -3,6 +3,7 @@
 #include <sstream>
   
 // build this file using:          g++ calculator.cpp -o calculator.exe -mwindows -luser32 -lgdi32
+//or if error of libstc++-c64.dll not found: g++ newcalc.cpp -o aaaaa.exe -luser32 -lgdi32 -static -static-libgcc -static-libstdc++ -mwindows
 
 // basic calculator using windows GUI API
 //code by OpenAi ChatGPT v4
