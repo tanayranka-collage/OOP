@@ -1,6 +1,8 @@
 #include <windows.h>
 #include <string>
 #include <sstream>
+  
+// build this file using:          g++ calculator.cpp -o calculator.exe -mwindows -luser32 -lgdi32
 
 // basic calculator using windows GUI API
 //code by OpenAi ChatGPT v4
